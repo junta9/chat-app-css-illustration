@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+
+}
+main {
+    height: 110vh;
+}
+#element-one {
+    position: absolute;
+    top: -40%;
+    left: -50%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%) );
+    border-bottom-right-radius: 50%;
+    z-index: -5;
+}
+#element-two {
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(276, 100%, 98%);
+    border-top-left-radius: 50%;
+    z-index: -5;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 40px;
+    font-weight: 500;
+    margin: 50px 0 30px 0;
+}
+#paragraph {
+    color: hsl(270, 7%, 64%);
+    text-align: center;
+    width: 82%;
+    line-height: 27px;
+
+}
+#card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 250px;
+    height: 520px;
+    border-radius: 35px;
+    margin-top: 50px;
+    /* padding: 10px; */
+    z-index: -1;
+    box-shadow: 0 0 20px 5px #dbdbdb;
+}
+#white-case {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: 50%;
+    height: 6%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10;
+}
+#card-inside {
+    position: relative;
+    background-color: hsl(270, 20%, 96%);
+    /* width: 230px; */
+    width: 90%;
+    /* height: 430px; */
+    height: 95%;
+    border-radius: 25px;
+}
+#mobile-head {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    top: 0;
+    height: 12%;
+    width: 100%;
+    background: linear-gradient( to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 15px;
+}
+#mobile-head img {
+    height: 25px;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+#chevron {
+    width: 10%;
+}
+#samuel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    width: 80%;
+}
+#samuel, #chevron {
+    color: hsl(0, 0%, 100%);
+}
+#samuel p {
+    margin: 0;
+    font-size: 12px;
+    
+
+}
+#samuel span {
+    margin: 0;
+    font-size: 8px;
+    opacity: 0.5;
+}
+#dot {
+    writing-mode: vertical-lr;
+    color: hsl(0, 0%, 100%);
+    width: 10%;
+}
+.mobile-body {
+    padding: 5px;
+}
+.mobile-body div:nth-child(1) {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mobile-body p {
+    max-width: 50%;
+    width: auto;
+    font-size: 8px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(276, 100%, 95%);
+    margin: 5px 5px;
+    padding: 8px;
+    border-radius: 10px 10px 10px 3px;
+}
+.flex {
+    display: flex;
+}
+.body-image {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.body-image img {
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+.right-text {
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.right-text p {
+    color: black;
+    background-color: white;
+    border-radius: 10px 10px 3px 10px;
+}
+.choice {
+    margin: 5px 5px 10px 5px;
+    background: linear-gradient( to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    align-items: center;
+    width: 70%;
+    border-radius: 10px 10px 10px 3px;
+}
+.choice p {
+    padding: 3px;
+    background-color: transparent;
+    color: white;
+    opacity: 0.7;
+}
+.choice .price {
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 1;
+}
+.choice .flex {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.choice .flex p {
+    margin-left: 0;
+}
+#submit {
+    align-items: center;
+    justify-content: space-between;
+    width: 86%;
+    height: 35px;
+    margin: 15px 5px;
+    border-radius: 25px;
+    border: none;
+    font-size: 10px;
+    padding-left: 20px;
+    background-color: white;
+    
+}
+#submit span {
+    color: hsl(206, 6%, 79%);
+}
+.choice .dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    /* display: inline-block; */
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid hsl(289, 100%, 72%);
+}
+
+#chevron-right {
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    background-color: hsl(271, 36%, 24%);
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+.chevron-right {
+    font-size: 2em;
+    font-weight: 500;
+}
+.paragraph-div {
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width: 375px) {
+    main {
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 376px) {
+    main {
+        overflow-y: hidden;
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 1025px)  {
+    main {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .container {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #element-one {
+        position: absolute;
+        top: 0%;
+        left: -10%;
+        width: 40%;
+        height: 780px;
+        background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%) );
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        z-index: -5;
+    }
+    #element-two {
+        position: absolute;
+        bottom: -5%;
+        height: 780px;
+        right: -15%;
+        width: 40%;
+        background-color: hsl(276, 100%, 98%);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        z-index: -5;
+    }
+    #card {
+        margin-left: 233px; 
+    }
+    .paragraph-div {
+        width: 38%;
+        align-items: flex-start;
+    }
+    h1 {
+        text-align: start;
+    }
+    #paragraph {
+        text-align: start;
+    }
+}
